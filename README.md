@@ -24,7 +24,11 @@
 - Uses `pimple/pimple` as DI container. Simple and effective
 
 ## ## Installation of Project
-1) Install the MySql database:
+1) Simply `$ git clone` the project
+
+I have intentionally committed the repo with the **vendor** and **composer.lock** file, so that you do not have to take the toruble to crun composer.
+
+2) Install the MySql database:
 
 ```
 $ cd /path/to/project/minicart/database
@@ -35,11 +39,11 @@ That's it.
 
 The script will do 3 things:
 
-- create a user and corresponding database with same name
-- create all tables
-- dump (insert) default data for Products and pricing rules
+    - create a user and corresponding database with same name
+    - create all tables
+    - dump (insert) default data for Products and pricing rules
 
-2) Create a vhost in apache, making sure the **DirectoryIndex app.php** is set.
+3) Create a vhost in apache, making sure the **DirectoryIndex app.php** is set.
 
 A sample apache vhost is founding folder **apache2** inside the project.
 
